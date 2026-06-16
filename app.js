@@ -34,14 +34,41 @@ const server = http.createServer((req, res) => {
     else if (req.url === '/qua') {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end(`Cardápio de quarta-feira:
-            *Bife de vaca 
-            *Frango grelhado 
+            *Carne de panela 
+            *Frango frito 
             *Strogonoff de frango 
             
             Acompanhamentos: Arroz
             Feijão 
-            Macarrão alho e oleoa
-            Abobrinha
+            Batata frita
+            Repolho
+            Salada`);
+    }
+    else if (req.url === '/qui') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end(`Cardápio de quinta-feira:
+            *Bife de vaca 
+            *Frango xadrez 
+            *Torresmo 
+            
+            Acompanhamentos: Arroz
+            Tutu de feijão 
+            Farofa de bacon
+            Quibebe
+            Salada`);
+    }
+    else if (req.url === '/sex') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end(`Cardápio de sexta-feira:
+            *Bife de vaca 
+            *Frango grelhado 
+            *Feijoada
+            
+            Acompanhamentos: Arroz
+            Feijão 
+            Farofa
+            Vinagrete 
+            Couve
             Salada`);
     }
 }
